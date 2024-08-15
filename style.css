@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+html {
+  min-width: 375px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+.card,
+.thanksMessage {
+  width: 80%;
+  background-color: var(--dark-blue);
+  padding: 30px;
+  border-radius: 20px;
+  /* margin-bottom: 10px; */
+}
+
+img.logo {
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  background-color: var(--very-dark-blue);
+  border-radius: 20px;
+}
+
+h1,
+h2 {
+  color: var(--white);
+}
+
+p {
+  color: var(--light-grey);
+}
+
+h1,
+p {
+  padding-bottom: 20px;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  padding: 10px 15px;
+  background-color: var(--very-dark-blue);
+  border-radius: 20px;
+  border: none;
+  /* opacity: 0.3; */
+  color: var(--white);
+}
+
+.rating.selected {
+  background-color: white;
+  color: black;
+}
+
+.rating:hover {
+  background-color: var(--orange);
+  color: var(--very-dark-blue);
+}
+
+.submit {
+  width: 100%;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--orange);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+/* desktop version */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card,
+  .thanksMessage {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .card,
+  .thanksMessage {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .card,
+  .thanksMessage {
+    width: 23%;
+  }
+}
+
+/* desain for active-state */
+.thanksMessage {
+  text-align: center;
+}
+
+.hasil {
+  padding-top: 10px;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
